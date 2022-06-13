@@ -8,6 +8,11 @@ binance_example/
 # old files
 old_src/
 
+# node_modules
+node_modules
+dist-*
+.DS_Store
+
 # jupyter notebook
 *.ipynb
 .ipynb_checkpoints/

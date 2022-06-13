@@ -10,7 +10,15 @@ class IndexPageView(View):
     template_name = 'trade/index.html'
 
     def get(self, request):
-        return render(request, template_name=self.template_name)
+        context ={}
+        return render(request, template_name=self.template_name, context=context)
 
     def post(self):
         pass
+
+
+class PrivacyPolicyView(View):
+    template_name = 'trade/extra/privacy-policy.html'
+
+    def get(self, request):
+        return render(request, template_name=self.template_name)

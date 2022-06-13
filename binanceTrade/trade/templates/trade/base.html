@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% include 'trade/_include/_head.html' %}
+        {% block addToHead %}{% endblock addToHead %}
+    </head>
+    <body>
+    {% block body %}
+    <!-- Wrapper Start-->
+
+
+        <!-- loader Start -->
+        {% block loader %}
+        <div id="loading">
+            <div class="loader simple-loader">
+                <div class="loader-body"></div>
+            </div>
+        </div>
+        {% endblock loader %}
+        <!-- loader END -->
+
+
+        <!-- Sidebar Start -->
+        {% block aside %}
+            {% include 'trade/_include/_aside.html' %}
+        {% endblock aside %}
+        <!-- Sidebar End -->
+
+
+        <!-- Main Start -->
+        {% block main %}
+        <main class="main-content">
+            <div class="position-relative">
+
+
+                <!-- Nav Start -->
+                {% block nav %}{% endblock nav %}
+                <!-- Nav End -->
+
+
+                <!-- Maincontent Start -->
+                {% block maincontent %}{% endblock maincontent %}
+                <!-- Maincontent End -->
+
+
+                <!-- Footer Start -->
+                {% block footer %}
+                    {% include 'trade/_include/_footer.html' %}
+                {% endblock footer %}
+                <!-- Footer End -->
+
+
+            </div>
+        </main>
+        {% endblock main %}
+        <!-- Main End -->
+
+
+        <!-- Offcanvas Start -->
+        <!-- Scripts Start -->
+        {% block scripts %}
+            {% include 'trade/_include/_scripts.html' %}
+        {% endblock scripts %}
+        <!-- Scripts End -->
+
+
+    <!-- Wrapper End-->
+    {% endblock body %}
+    </body>
+</html>
