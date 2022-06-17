@@ -6,7 +6,7 @@
 {% block nav %}
 <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar border-bottom">
     <div class="container-fluid navbar-inner">
-        <a href="../dashboard/index.html" class="navbar-brand">
+        <a href="{% url 'home' %}" class="navbar-brand">
         </a>
         <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
             <i class="icon">
@@ -57,7 +57,7 @@
                             <div class="card-body p-0">
                                 <a href="#" class="iq-sub-card">
                                     <div class="d-flex">
-                                        <img src="../assets/images/utilities/05.png"
+                                        <img src="{% static 'trade/assets/images/utilities/05.png' %}"
                                              class="img-fluid avatar avatar-30 avatar-rounded" alt="img51">
                                         <div class="ms-3 w-100">
                                             <h6 class="mb-0 ">Successfull transaction og 0.01 BTC</h6>
@@ -70,7 +70,7 @@
                                 <a href="#" class="iq-sub-card">
                                     <div class="d-flex align-items-center">
                                         <div class="">
-                                            <img src="../assets/images/utilities/03.png"
+                                            <img src="{% static 'trade/assets/images/utilities/03.png' %}"
                                                  class="img-fluid avatar avatar-30 avatar-rounded" alt="img52">
                                         </div>
                                         <div class="ms-3 w-100">
@@ -84,7 +84,7 @@
                                 </a>
                                 <a href="#" class="iq-sub-card">
                                     <div class="d-flex align-items-center">
-                                        <img src="../assets/images/utilities/04.png"
+                                        <img src="{% static 'trade/assets/images/utilities/04.png' %}"
                                              class="img-fluid avatar avatar-30 avatar-rounded" alt="img53">
                                         <div class="ms-3 w-100">
                                             <h6 class="mb-0 ">Cancelled order of 2000 ICO</h6>
@@ -97,7 +97,7 @@
                                 </a>
                                 <a href="#" class="iq-sub-card">
                                     <div class="d-flex align-items-center">
-                                        <img src="../assets/images/utilities/05.png"
+                                        <img src="{% static 'trade/assets/images/utilities/05.png' %}"
                                              class="img-fluid avatar avatar-30 avatar-rounded" alt="img54">
                                         <div class="w-100 ms-3">
                                             <h6 class="mb-0 ">Great speed notify of 1.34 LTC</h6>
@@ -137,7 +137,7 @@
                                 <a href="#" class="iq-sub-card">
                                     <div class="d-flex ">
                                         <div class="">
-                                            <img src="../assets/images/coins/02.png"
+                                            <img src="{% static 'trade/assets/images/coins/02.png' %}"
                                                  class="img-fluid avatar avatar-50 avatar-rounded" alt="img55">
                                         </div>
                                         <div class=" w-100 ms-3">
@@ -150,7 +150,7 @@
                                 <a href="#" class="iq-sub-card">
                                     <div class="d-flex">
                                         <div class="">
-                                            <img src="../assets/images/coins/03.png"
+                                            <img src="{% static 'trade/assets/images/coins/03.png' %}"
                                                  class="img-fluid avatar avatar-50 avatar-rounded" alt="img56">
                                         </div>
                                         <div class="ms-3">
@@ -163,7 +163,7 @@
                                 <a href="#" class="iq-sub-card">
                                     <div class="d-flex">
                                         <div class="">
-                                            <img src="../assets/images/coins/06.png"
+                                            <img src="{% static 'trade/assets/images/coins/06.png' %}"
                                                  class="img-fluid avatar avatar-50 avatar-rounded" alt="img57">
                                         </div>
                                         <div class="ms-3">
@@ -180,7 +180,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link py-0 d-flex align-items-center" href="#" id="navbarDropdown"
                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../assets/images/avatars/01.png" alt="User-Profile"
+                        <img src="{% static 'trade/assets/images/avatars/01.png' %}" alt="User-Profile"
                              class="img-fluid avatar avatar-50 avatar-rounded">
                         <div class="caption ms-3 ">
                             <h6 class="mb-0 caption-title">Wade Warren</h6>
@@ -189,15 +189,15 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li class="border-0"><a class="dropdown-item"
-                                                href="../dashboard/app/user-profile.html">Profile</a>
+                                                href="{% url 'profile' %}">Profile</a>
                         </li>
                         <li class="border-0"><a class="dropdown-item"
-                                                href="../dashboard/app/user-privacy-setting.html">Privacy
+                                                href="{% url 'privacy_setting' %}">Privacy
                             Setting</a></li>
                         <li class="border-0">
                             <hr class="m-0 dropdown-divider">
                         </li>
-                        <li class="border-0"><a class="dropdown-item" href="../dashboard/auth/sign-in.html">Logout</a>
+                        <li class="border-0"><a class="dropdown-item" href="{%  url 'signin' %}">Logout</a>
                         </li>
                     </ul>
                 </li>
@@ -220,7 +220,7 @@
                         <div class="card-body ">
                             <div class="d-flex justify-content-between flex-wrap">
                                 <div class="d-flex">
-                                    <img src="../assets/images/coins/06.png"
+                                    <img src="{% static 'trade/assets/images/coins/06.png' %}"
                                          class="img-fluid avatar avatar-40 avatar-rounded" alt="img8">
                                     <div class="dropdown mt-2 ms-2">
                                         <a href="#" class="text-white" id="dropdownMenuButton4"
@@ -235,19 +235,19 @@
                                         </a>
                                         <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton4">
                                             <li><a href="#" class="dropdown-item"><img
-                                                    src="../assets/images/coins/01.png"
+                                                    src="{% static 'trade/assets/images/coins/01.png' %}"
                                                     class="img-fluid avatar avatar-30 avatar-rounded" alt="img71">
                                                 561,511 Btc</a></li>
                                             <li><a href="#" class="dropdown-item"><img
-                                                    src="../assets/images/coins/06.png"
+                                                    src="{% static 'trade/assets/images/coins/06.png' %}"
                                                     class="img-fluid avatar avatar-30 avatar-rounded" alt="img72">
                                                 561,511 Ltc</a></li>
                                             <li><a href="#" class="dropdown-item"><img
-                                                    src="../assets/images/coins/03.png"
+                                                    src="{% static 'trade/assets/images/coins/03.png' %}"
                                                     class="img-fluid avatar avatar-30 avatar-rounded" alt="img73">
                                                 561,511 Eth</a></li>
                                             <li><a href="#" class="dropdown-item"><img
-                                                    src="../assets/images/coins/08.png"
+                                                    src="{% static 'trade/assets/images/coins/08.png' %}"
                                                     class="img-fluid avatar avatar-30 avatar-rounded" alt="img74">
                                                 561,511 Xmr</a></li>
                                         </ul>
@@ -265,19 +265,19 @@
                                         </a>
                                         <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton4">
                                             <li><a href="#" class="dropdown-item"><img
-                                                    src="../assets/images/coins/01.png"
+                                                    src="{% static 'trade/assets/images/coins/01.png' %}"
                                                     class="img-fluid avatar avatar-30 avatar-rounded" alt="img71">
                                                 561,511 Btc</a></li>
                                             <li><a href="#" class="dropdown-item"><img
-                                                    src="../assets/images/coins/06.png"
+                                                    src="{% static 'trade/assets/images/coins/06.png' %}"
                                                     class="img-fluid avatar avatar-30 avatar-rounded" alt="img72">
                                                 561,511 Ltc</a></li>
                                             <li><a href="#" class="dropdown-item"><img
-                                                    src="../assets/images/coins/03.png"
+                                                    src="{% static 'trade/assets/images/coins/03.png' %}"
                                                     class="img-fluid avatar avatar-30 avatar-rounded" alt="img73">
                                                 561,511 Eth</a></li>
                                             <li><a href="#" class="dropdown-item"><img
-                                                    src="../assets/images/coins/08.png"
+                                                    src="{% static 'trade/assets/images/coins/08.png' %}"
                                                     class="img-fluid avatar avatar-30 avatar-rounded" alt="img74">
                                                 561,511 Xmr</a></li>
                                         </ul>
@@ -351,18 +351,18 @@
                                         </div>
                                         <select class="form-select mb-3" aria-label="Default select example">
                                             <option selected><a href="#" class="dropdown-item"><img
-                                                    src="../assets/images/coins/01.png"
+                                                    src="{% static 'trade/assets/images/coins/01.png' %}"
                                                     class="img-fluid avatar avatar-30 avatar-rounded" alt="img71">
                                                 561,511 Btc</a></option>
                                             <option>
                                                 <li><a href="#" class="dropdown-item"><img
-                                                        src="../assets/images/coins/01.png"
+                                                        src="{% static 'trade/assets/images/coins/01.png' %}"
                                                         class="img-fluid avatar avatar-30 avatar-rounded"
                                                         alt="img71"> 561,511 Btc</a></li>
                                             </option>
                                             <option>
                                                 <li><a href="#" class="dropdown-item"><img
-                                                        src="../assets/images/coins/06.png"
+                                                        src="{% static 'trade/assets/images/coins/06.png' %}"
                                                         class="img-fluid avatar avatar-30 avatar-rounded"
                                                         alt="img72"> 561,511 Ltc</a></li>
                                             </option>
@@ -390,16 +390,16 @@
                                 + Add Crypto
                             </button>
                             <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton4">
-                                <li><a href="#" class="dropdown-item"><img src="../assets/images/coins/01.png"
+                                <li><a href="#" class="dropdown-item"><img src="{% static 'trade/assets/images/coins/01.png' %}"
                                                                            class="img-fluid avatar avatar-30 avatar-rounded"
                                                                            alt="img71"> 561,511 Btc</a></li>
-                                <li><a href="#" class="dropdown-item"><img src="../assets/images/coins/06.png"
+                                <li><a href="#" class="dropdown-item"><img src="{% static 'trade/assets/images/coins/06.png' %}"
                                                                            class="img-fluid avatar avatar-30 avatar-rounded"
                                                                            alt="img72"> 561,511 Ltc</a></li>
-                                <li><a href="#" class="dropdown-item"><img src="../assets/images/coins/03.png"
+                                <li><a href="#" class="dropdown-item"><img src="{% static 'trade/assets/images/coins/03.png' %}"
                                                                            class="img-fluid avatar avatar-30 avatar-rounded"
                                                                            alt="img73"> 561,511 Eth</a></li>
-                                <li><a href="#" class="dropdown-item"><img src="../assets/images/coins/08.png"
+                                <li><a href="#" class="dropdown-item"><img src="{% static 'trade/assets/images/coins/08.png' %}"
                                                                            class="img-fluid avatar avatar-30 avatar-rounded"
                                                                            alt="img74"> 561,511 Xmr</a></li>
                             </ul>
@@ -417,7 +417,7 @@
                         <div class="col-lg-4">
                             <div class="card shining-card">
                                 <div class="card-body">
-                                    <img src="../assets/images/coins/01.png"
+                                    <img src="{% static 'trade/assets/images/coins/01.png' %}"
                                          class="img-fluid avatar avatar-50 avatar-rounded" alt="img60">
                                     <span class="fs-5 me-2">BTC/USDT</span>
                                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none"
@@ -439,7 +439,7 @@
                         <div class="col-lg-4">
                             <div class="card shining-card">
                                 <div class="card-body">
-                                    <img src="../assets/images/coins/01.png"
+                                    <img src="{% static 'trade/assets/images/coins/01.png' %}"
                                          class="img-fluid avatar avatar-50 avatar-rounded" alt="img60">
                                     <span class="fs-5 me-2">ETH/USDT</span>
                                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none"
@@ -461,7 +461,7 @@
                         <div class="col-lg-4">
                             <div class="card shining-card">
                                 <div class="card-body">
-                                    <img src="../assets/images/coins/01.png"
+                                    <img src="{% static 'trade/assets/images/coins/01.png' %}"
                                          class="img-fluid avatar avatar-50 avatar-rounded" alt="img60">
                                     <span class="fs-5 me-2">LTC/USDT</span>
                                     <svg width="36" height="35" viewBox="0 0 36 35" fill="none"
@@ -491,25 +491,25 @@
                                             <button class="btn btn-soft-secondary btn-sm dropdown-toggle"
                                                     type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown"
                                                     aria-expanded="false">
-                                                <img src="../assets/images/coins/01.png"
+                                                <img src="{% static 'trade/assets/images/coins/01.png' %}"
                                                      class="img-fluid avatar avatar-30 avatar-rounded" alt="img5">
                                                 561,511 btc
                                             </button>
                                             <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton5">
                                                 <li><a href="#" class="dropdown-item"><img
-                                                        src="../assets/images/coins/01.png"
+                                                        src="{% static 'trade/assets/images/coins/01.png' %}"
                                                         class="img-fluid avatar avatar-30 avatar-rounded"
                                                         alt="img75"> 561,511 Btc</a></li>
                                                 <li><a href="#" class="dropdown-item"><img
-                                                        src="../assets/images/coins/06.png"
+                                                        src="{% static 'trade/assets/images/coins/06.png' %}"
                                                         class="img-fluid avatar avatar-30 avatar-rounded"
                                                         alt="img76"> 561,511 Ltc</a></li>
                                                 <li><a href="#" class="dropdown-item"><img
-                                                        src="../assets/images/coins/03.png"
+                                                        src="{% static 'trade/assets/images/coins/03.png' %}"
                                                         class="img-fluid avatar avatar-30 avatar-rounded"
                                                         alt="img77"> 561,511 Eth</a></li>
                                                 <li><a href="#" class="dropdown-item"><img
-                                                        src="../assets/images/coins/08.png"
+                                                        src="{% static 'trade/assets/images/coins/08.png' %}"
                                                         class="img-fluid avatar avatar-30 avatar-rounded"
                                                         alt="img78"> 561,511 Xmr</a></li>
                                             </ul>
@@ -743,7 +743,7 @@
                                     <tbody>
                                     <tr class="white-space-no-wrap">
                                         <td>
-                                            <img src="../assets/images/coins/02.png"
+                                            <img src="{% static 'trade/assets/images/coins/02.png' %}"
                                                  class="img-fluid avatar avatar-30 avatar-rounded" alt="img23"/>
                                             Bitcoin BTC<a class="button btn-primary badge ms-2"
                                                           type="button">Buy</a>
@@ -793,7 +793,7 @@
                                     </tr>
                                     <tr class="white-space-no-wrap">
                                         <td>
-                                            <img src="../assets/images/coins/02.png"
+                                            <img src="{% static 'trade/assets/images/coins/02.png' %}"
                                                  class="img-fluid avatar avatar-30 avatar-rounded" alt="img23"/>
                                             Ethereum ETH<a class="button btn-primary badge ms-2"
                                                            type="button">Buy</a>
@@ -843,7 +843,7 @@
                                     </tr>
                                     <tr class="white-space-no-wrap">
                                         <td>
-                                            <img src="../assets/images/coins/02.png"
+                                            <img src="{% static 'trade/assets/images/coins/02.png' %}"
                                                  class="img-fluid avatar avatar-30 avatar-rounded" alt="img23"/>
                                             Monero XMR<a class="button btn-primary badge ms-2" type="button">Buy</a>
                                         </td>
@@ -892,7 +892,7 @@
                                     </tr>
                                     <tr class="white-space-no-wrap">
                                         <td>
-                                            <img src="../assets/images/coins/02.png"
+                                            <img src="{% static 'trade/assets/images/coins/02.png' %}"
                                                  class="img-fluid avatar avatar-30 avatar-rounded" alt="img23"/>
                                             Litecoin LTC<a class="button btn-primary badge ms-2"
                                                            type="button">Buy</a>
@@ -942,7 +942,7 @@
                                     </tr>
                                     <tr class="white-space-no-wrap">
                                         <td>
-                                            <img src="../assets/images/coins/02.png"
+                                            <img src="{% static 'trade/assets/images/coins/02.png' %}"
                                                  class="img-fluid avatar avatar-30 avatar-rounded" alt="img23"/>
                                             Bitcoin BTC<a class="button btn-primary badge ms-2"
                                                           type="button">Buy</a>
@@ -1009,7 +1009,7 @@
                             </div>
                         </div>
                         <div class="card-body d-flex align-items-center justify-content-center">
-                            <img src="../assets/images/coins/14.png" class="img-fluid p-0 w-75" alt="img60">
+                            <img src="{% static 'trade/assets/images/coins/14.png' %}" class="img-fluid p-0 w-75" alt="img60">
                         </div>
                     </div>
                 </div>
@@ -1024,7 +1024,7 @@
                             <ul class="list-inline m-0 p-0">
                                 <li class="d-flex  align-items-center pt-3">
                                     <div class="d-flex justify-content-between rounded-pill"><img
-                                            src="../assets/images/coins/01.png"
+                                            src="{% static 'trade/assets/images/coins/01.png' %}"
                                             class="img-fluid avatar avatar-40 avatar-rounded" alt="img6">
                                         <div class="ms-3 flex-grow-1">
                                             <h5 class="mb-2">Bitcoin</h5>
@@ -1039,7 +1039,7 @@
                                 </li>
                                 <li class="d-flex  align-items-center pt-3">
                                     <div class="d-flex justify-content-between rounded-pill"><img
-                                            src="../assets/images/coins/09.png"
+                                            src="{% static 'trade/assets/images/coins/09.png' %}"
                                             class="img-fluid avatar avatar-40 avatar-rounded" alt="img7">
                                         <div class="ms-3 flex-grow-1">
                                             <h5 class="mb-2">Ethereum</h5>
@@ -1054,7 +1054,7 @@
                                 </li>
                                 <li class="d-flex  align-items-center pt-3">
                                     <div class="d-flex justify-content-between rounded-pill"><img
-                                            src="../assets/images/coins/06.png"
+                                            src="{% static 'trade/assets/images/coins/06.png' %}"
                                             class="img-fluid avatar avatar-40 avatar-rounded" alt="img8">
                                         <div class="ms-3 flex-grow-1">
                                             <h5 class="mb-2">Litecoin</h5>
@@ -1081,23 +1081,23 @@
                         <div class="card-body">
                             <div class="d-grid grid-cols-5 gap-card mb-4">
                                 <div class="">
-                                    <img src="../assets/images/avatars/02.png"
+                                    <img src="{% static 'trade/assets/images/avatars/02.png' %}"
                                          class="img-fluid avatar avatar-30px avatar-rounded" alt="img36">
                                 </div>
                                 <div class="">
-                                    <img src="../assets/images/avatars/03.png"
+                                    <img src="{% static 'trade/assets/images/avatars/03.png' %}"
                                          class="img-fluid avatar avatar-30px avatar-rounded" alt="img37">
                                 </div>
                                 <div class="">
-                                    <img src="../assets/images/avatars/04.png"
+                                    <img src="{% static 'trade/assets/images/avatars/04.png' %}"
                                          class="img-fluid avatar avatar-30px avatar-rounded" alt="img38">
                                 </div>
                                 <div class="">
-                                    <img src="../assets/images/avatars/05.png"
+                                    <img src="{% static 'trade/assets/images/avatars/05.png' %}"
                                          class="img-fluid avatar avatar-30px avatar-rounded" alt="img39">
                                 </div>
                                 <div class="">
-                                    <img src="../assets/images/avatars/06.png"
+                                    <img src="{% static 'trade/assets/images/avatars/06.png' %}"
                                          class="img-fluid avatar avatar-30px avatar-rounded" alt="img40">
                                 </div>
                             </div>

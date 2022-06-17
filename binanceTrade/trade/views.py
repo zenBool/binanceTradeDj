@@ -29,3 +29,34 @@ class TermsOfServiceView(View):
 
     def get(self, request):
         return render(request, template_name=self.template_name)
+
+
+# User profile chapter
+class UserProfileView(View):
+    template_name = 'trade/app/user-profile.html'
+
+    def get(self, request):
+        return render(request, template_name=self.template_name)
+
+
+class UserPrivacySettingsView(View):
+    template_name = 'trade/app/user-privacy-setting.html'
+
+    def get(self, request):
+        return render(request, template_name=self.template_name)
+
+
+class UserAccountSettingsView(View):
+    template_name = 'trade/app/user-account-setting.html'
+
+    def get(self, request):
+        return render(request, template_name=self.template_name)
+
+
+# Authentication chapter
+class SigninView(View):
+    template_name = 'trade/auth/sign-in.html'
+
+    def get(self, request):
+        return render(request, template_name=self.template_name)
+
