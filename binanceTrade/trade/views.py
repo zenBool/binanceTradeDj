@@ -10,7 +10,7 @@ class IndexPageView(View):
     template_name = 'trade/index.html'
 
     def get(self, request):
-        context ={}
+        context = {}
         return render(request, template_name=self.template_name, context=context)
 
     def post(self):
@@ -59,3 +59,19 @@ class SigninView(View):
 
     def get(self, request):
         return render(request, template_name=self.template_name)
+
+
+class RecoverPWView(View):
+    templates = 'trade/auth/recoverpw.html'
+
+
+class MapView(View):
+    templates = 'trade/map/google.html'
+
+
+class IconsView(View):
+    templates = 'trade/icons/outline.html'
+
+
+class ErrorsView(View):
+    templates = 'trade/errors/error404.html'
