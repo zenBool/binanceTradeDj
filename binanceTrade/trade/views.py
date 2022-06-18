@@ -22,3 +22,10 @@ class PrivacyPolicyView(View):
 
     def get(self, request):
         return render(request, template_name=self.template_name)
+
+
+class TermsOfServiceView(View):
+    template_name = 'trade/extra/terms-of-service.html'
+
+    def get(self, request):
+        return render(request, template_name=self.template_name)
