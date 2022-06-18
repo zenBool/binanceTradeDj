@@ -9,4 +9,6 @@ urlpatterns = [
     path('profile/', views.UserProfileView.as_view(), name='profile'),
     path('profile/policy-settings', views.UserPrivacySettingsView.as_view(), name='privacy_setting'),
     path('auth/signin', views.SigninView.as_view(), name='signin'),
+    path('extra/privacy-policy', views.PrivacyPolicyView.as_view(), name='privacy'),
+    path('extra/terms-of-service', views.TermsOfServiceView.as_view(), name='terms'),
 ]

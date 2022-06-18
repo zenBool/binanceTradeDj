@@ -59,4 +59,3 @@ class SigninView(View):
 
     def get(self, request):
         return render(request, template_name=self.template_name)
-
