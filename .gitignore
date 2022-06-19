@@ -8,6 +8,13 @@ binance_example/
 # old files
 old_src/
 
+# exclude gulp and src
+gulp.config.json
+gulp/
+gulpfile.js
+package.json
+src/
+
 # node_modules
 node_modules
 dist-*
