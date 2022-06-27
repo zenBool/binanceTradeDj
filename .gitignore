@@ -26,6 +26,7 @@ dist-*
 
 # ignore all files/directpry in ant 'tmp' directory
 tmp/
+test/
 
 # Logging files
 logs/
