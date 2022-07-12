@@ -1,3 +1,5 @@
+import os
+
 from django.shortcuts import render, HttpResponse, Http404, HttpResponseRedirect
 from django.views.generic import View
 
@@ -15,6 +17,13 @@ class IndexPageView(View):
 
     def post(self):
         pass
+
+
+def monitor(request):
+    context = {
+        'content': os.getenv('BINANCE_API_KEY'),
+    }
+    return render(request, 'trade/binance/monitor_assets.html', context)
 
 
 class PrivacyPolicyView(View):

@@ -23,6 +23,7 @@ dist-*
 # jupyter notebook
 *.ipynb
 .ipynb_checkpoints/
+jupyter/
 
 # ignore all files/directpry in ant 'tmp' directory
 tmp/
