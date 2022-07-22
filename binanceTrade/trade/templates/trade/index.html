@@ -1,5 +1,6 @@
 {% extends 'trade/base.html' %}
 {% load static %}
+{% load binance_tags %}
 
 
 <!--Nav Start-->
@@ -17,7 +18,7 @@
             </i>
         </div>
         <h4 class="title">
-            Dashboard
+            Dashboard New Insert
         </h4>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -212,6 +213,7 @@
 <!-- main content start -->
 {% block maincontent %}
 <div class="container-fluid content-inner pb-0">
+    {% index_table %}
     <div class="row">
         <div class="col-lg-12">
             <div class="row align-items-center mb-4">

@@ -44,7 +44,7 @@ SYMBOLS = ('BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'LU
            'XRPETH', 'DOTETH', 'AVAXETH', 'MATICETH', 'LTCETH', 'SOLBNB', 'ADABNB', 'XRPBNB',
            'DOTBNB', 'AVAXBNB', 'MATICBNB', 'LTCBNB', 'TRXBTC', 'TRXETH', 'TRXBNB'
            )
-IDX_COIN = {'idxusd': ('BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOTUSDT',
+IDX_COIN = {'idxusdt': ('BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOTUSDT',
                        'AVAXUSDT', 'MATICUSDT', 'LTCUSDT'),
             'idxbtc': ('TRXBTC', 'ETHBTC', 'BNBBTC', 'SOLBTC', 'ADABTC', 'XRPBTC', 'DOTBTC', 'AVAXBTC',
                        'MATICBTC', 'LTCBTC'),
@@ -61,7 +61,7 @@ IDX_COIN = {'idxusd': ('BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'X
             'idxltc': ('LTCBTC', 'LTCETH', 'LTCBNB'),
             'idxtrx': ('TRXBTC', 'TRXETH', 'TRXBNB'),
             }
-IDX_USD30 = {'idxusd30': ('BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOTUSDT',
+IDX_USD30 = {'idxusdt30': ('BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'XRPUSDT', 'DOTUSDT',
                           'AVAXUSDT', 'DOGEUSDT', 'SHIBUSDT', 'MATICUSDT', 'LINKUSDT', 'UNIUSDT', 'ALGOUSDT',
                           'LTCUSDT', 'NEARUSDT', 'ATOMUSDT', 'BCHUSDT', 'ICPUSDT', 'TRXUSDT', 'XLMUSDT',
                           'FTMUSDT', 'MANAUSDT', 'FTTUSDT', 'VETUSDT', 'HBARUSDT', 'FILUSDT', 'AXSUSDT',
