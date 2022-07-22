@@ -14,12 +14,12 @@ class MA(object):
     SMOOTHING_FACTOR = 2
 
     @classmethod
-    def ema(cls, price, ema, period):
+    def ema(cls, price, previous, period):
         k = cls.SMOOTHING_FACTOR / (period + 1)
 
-        return price * k + ema * (1 - k)
+        return price * k + previous * (1 - k)
 
     @staticmethod
-    def ema_delta(ema_0, ema_1):
+    def ema_power(previous, last):
 
-        return ema_0 / ema_1 - 1
+        return last / previous - 1

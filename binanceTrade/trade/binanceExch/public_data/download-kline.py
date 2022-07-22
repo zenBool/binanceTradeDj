@@ -96,10 +96,9 @@ if __name__ == "__main__":
     args = parser.parse_args(sys.argv[1:])
 
     if not args.symbols:
-      print("fetching symbols from symbols_new.txt")
+      print("fetching symbols from enums.SYMBOLS")
 
-      with open(os.path.join(os.path.dirname(__file__), 'symbols.txt'), 'r') as f:
-        symbols = [line.strip() for line in f]
+      symbols = list(SYMBOLS)
 
       # symbols = get_all_symbols(args.type)
 
